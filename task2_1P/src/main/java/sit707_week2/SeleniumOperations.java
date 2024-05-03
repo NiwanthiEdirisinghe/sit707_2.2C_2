@@ -46,54 +46,54 @@ public class SeleniumOperations {
 		// Load a webpage in chromium browser.
 		driver.get(url);
 
-        // Find the element with id "firstname"
-        WebElement element = driver.findElement(By.id("firstname"));
-        System.out.println("Found element: " + element);
-
-        // Send first name
-        element.sendKeys("Ahsan");
-
-        // Use relative locator to find the last name input field
-        WebElement lastNameElement = driver.findElement(RelativeLocator
-                .with(By.tagName("input"))
-                .below(element));
-        lastNameElement.sendKeys("Perera");
-
-        // Use relative locator to find the phone number input field
-        WebElement phoneNumberElement = driver.findElement(RelativeLocator
-                .with(By.tagName("input"))
-                .below(lastNameElement));
-        phoneNumberElement.sendKeys("04578945698");
-
-        // Use relative locator to find the email input field
-        WebElement emailElement = driver.findElement(RelativeLocator
-                .with(By.tagName("input"))
-                .below(phoneNumberElement));
-        emailElement.sendKeys("ahsan@google.com");
-
-        // Use relative locator to find the password input field
-        WebElement passwordElement = driver.findElement(RelativeLocator
-                .with(By.tagName("input"))
-                .below(emailElement));
-        passwordElement.sendKeys("Abc@125k");
-
-        // Use relative locator to find the confirm password input field
-        WebElement confirmPasswordElement = driver.findElement(RelativeLocator
-                .with(By.tagName("input"))
-                .below(passwordElement));
-        confirmPasswordElement.sendKeys("Abc@125k");
-
-        // Find the personal button relative to the confirmPasswordElement
-        WebElement personalButton = driver.findElement(RelativeLocator
-                .with(By.tagName("button"))
-                .below(confirmPasswordElement));
-        personalButton.click();
-
-        // Find the create account button relative to the confirm password element
-        WebElement createAccountButton = driver.findElement(RelativeLocator
-                .with(By.tagName("button"))
-                .below(personalButton));
-        createAccountButton.click();
+	        // Find the element with id "firstname"
+	        WebElement element = driver.findElement(By.id("firstname"));
+	        System.out.println("Found element: " + element);
+	
+	        // Send first name
+	        element.sendKeys("Ahsan");
+	
+	        // Use relative locator to find the last name input field
+	        WebElement lastNameElement = driver.findElement(RelativeLocator
+	                .with(By.tagName("input"))
+	                .below(element));
+	        lastNameElement.sendKeys("Perera");
+	
+	        // Use relative locator to find the phone number input field
+	        WebElement phoneNumberElement = driver.findElement(RelativeLocator
+	                .with(By.tagName("input"))
+	                .below(lastNameElement));
+	        phoneNumberElement.sendKeys("04578945698");
+	
+	        // Use relative locator to find the email input field
+	        WebElement emailElement = driver.findElement(RelativeLocator
+	                .with(By.tagName("input"))
+	                .below(phoneNumberElement));
+	        emailElement.sendKeys("ahsan@google.com");
+	
+	        // Use relative locator to find the password input field
+	        WebElement passwordElement = driver.findElement(RelativeLocator
+	                .with(By.tagName("input"))
+	                .below(emailElement));
+	        passwordElement.sendKeys("Abc@125k");
+	
+	        // Use relative locator to find the confirm password input field
+	        WebElement confirmPasswordElement = driver.findElement(RelativeLocator
+	                .with(By.tagName("input"))
+	                .below(passwordElement));
+	        confirmPasswordElement.sendKeys("Abc@125k");
+	
+	        // Find the personal button relative to the confirmPasswordElement
+	        WebElement personalButton = driver.findElement(RelativeLocator
+	                .with(By.tagName("button"))
+	                .below(confirmPasswordElement));
+	        personalButton.click();
+	
+	        // Find the create account button relative to the confirm password element
+	        WebElement createAccountButton = driver.findElement(RelativeLocator
+	                .with(By.tagName("button"))
+	                .below(personalButton));
+	        createAccountButton.click();
 
 		/*
 		 * Take screenshot using selenium API.
