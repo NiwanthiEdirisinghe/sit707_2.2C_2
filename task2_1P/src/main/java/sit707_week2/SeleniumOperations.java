@@ -46,8 +46,6 @@ public class SeleniumOperations {
 		// Load a webpage in chromium browser.
 		driver.get(url);
 
-		// Find the first name input field
-		// Find first input field which is firstname
         // Find the element with id "firstname"
         WebElement element = driver.findElement(By.id("firstname"));
         System.out.println("Found element: " + element);
